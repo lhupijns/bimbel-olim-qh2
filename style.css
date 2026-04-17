@@ -1,0 +1,83 @@
+/* Custom Fonts */
+.font-nunito { font-family: 'Nunito', sans-serif; }
+.font-fredoka { font-family: 'Fredoka', sans-serif; }
+.arabic-text { font-family: 'Amiri', serif; }
+
+/* Background Pattern Ceria */
+.bg-pattern {
+    background-color: #f0f9ff;
+    background-image: radial-gradient(#bae6fd 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(-5%); }
+    50% { transform: translateY(0); }
+}
+
+/* Custom Hide Class for SPA */
+.hidden {
+    display: none !important;
+}
+
+/* Quiz Options Styling (3D Kids Vibe) */
+.quiz-option {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.25rem;
+    border: 2px solid #e2e8f0;
+    border-bottom: 4px solid #cbd5e1;
+    border-radius: 1rem;
+    background-color: white;
+    font-weight: 700;
+    color: #334155;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: #93c5fd;
+    border-bottom-color: #60a5fa;
+    background-color: #eff6ff;
+    transform: translateY(-2px);
+}
+
+.quiz-option:active:not(:disabled) {
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Correct/Wrong States */
+.correct-answer {
+    border-color: #22c55e !important;
+    border-bottom-color: #16a34a !important;
+    background-color: #f0fdf4 !important;
+    color: #166534 !important;
+}
+
+.wrong-answer {
+    border-color: #ef4444 !important;
+    border-bottom-color: #dc2626 !important;
+    background-color: #fef2f2 !important;
+    color: #991b1b !important;
+}
